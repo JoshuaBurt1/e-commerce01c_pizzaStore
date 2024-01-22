@@ -1,15 +1,24 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# eCommerce Example 1c (React)
 
 ## Project setup
 ```
 //Open code editor
 Install dependencies:
-npm i cors dotenv stripe
+npm i cors dotenv stripe react-router-dom
+
+//create build folder, in package.json
+"build": "react-scripts build --dest build",
 
 add .env file at root:
 STRIPE_SECRET_KEY="YOUR_SECRET_KEY"
+
+npm run build
+create a folder structure app/views/
+copy build folder components to app/views/
+
+Run server: node index.js
+
+view webpage @ http://localhost:3000
 ```
 
 ## Available Scripts
@@ -80,7 +89,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-//npm i cors dotenv express stripe react-router-dom
-//"scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build--dest build",
+### Capabilities 
+```
+~Stripe Payments 
+```
+
