@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project setup
+```
+//Open code editor
+Install dependencies:
+npm i cors dotenv stripe
+
+add .env file at root:
+STRIPE_SECRET_KEY="YOUR_SECRET_KEY"
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
