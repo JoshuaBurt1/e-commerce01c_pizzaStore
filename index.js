@@ -7,11 +7,11 @@ const path = require("path");  // Import the path module
 const app = express();
 
 // Define the path for serving static files
-const staticPath = path.join(__dirname, '/app/views/');
+const staticPath = path.join(__dirname, 'build'); //or '/app/views/'
 app.use(express.static(staticPath));
 
 var corsOptions = {
-  origin: "http://localhost:3001"
+  origin: "https://cult-of-pizza-react.onrender.com"
 };
 
 app.use(cors(corsOptions));
@@ -41,8 +41,8 @@ app.post("/checkout", async (req, res) => {
         },
         quantity: item.quantity,
       })),
-      success_url: `http://localhost:3000/success`, // Adjust the URL if needed
-      cancel_url: `http://localhost:3000`, // Adjust the URL if needed
+      success_url: `https://cult-of-pizza-react.onrender.com/success`, // Adjust the URL if needed
+      cancel_url: `https://cult-of-pizza-react.onrender.com`, // Adjust the URL if needed
     });
     res.json({ url: session.url });
   } catch (e) {

@@ -138,7 +138,7 @@ const PizzaOrder = () => {
 
     console.log(orderItems);
 
-    fetch("http://localhost:3000/checkout", {
+    fetch("https://cult-of-pizza-vue.onrender.com/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
